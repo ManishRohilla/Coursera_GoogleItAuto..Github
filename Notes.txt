@@ -2,4 +2,11 @@ Git or VCS Version Control System
 
 Historical Copies
 
+most primitive form of version control, keeping historical copies.
 These copies let you see what the project was like before, and go back to that version if you end up deciding that the latest changes were wrong. They also let you see the progress of the changes over time, and maybe even help you understand why a change was made. We say that this is primitive because it's very manual and not very detailed. First, you need to remember to make the copy. Second, you usually make a copy of the whole thing, even if you're only changing one small part.
+
+--> diff filename filename
+TO get the difference between two files line by line.
+
+--> diff -u filename filename
+To get the differences between 2 files line by line with "+" "-" symbols to highlight changes.
