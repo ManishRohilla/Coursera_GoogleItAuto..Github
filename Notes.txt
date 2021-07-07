@@ -32,3 +32,32 @@ A VCS even provides a mechanism to allow the author of a commit to record why th
 
 ###############################################################
 First Step with github 
+
+Git keeps record about who made changes to the file and for that git needs to know, "WHO YOU ARE?" and to set ur identity in git these commands are followed.
+
+--> git config --global user.email "abc@gmail.com"
+--> git config --global user.name "Name"
+
+Make Directory -- mkdir DirName
+Change to directory -- cd DirName
+
+----- To initialize git to a directory-----
+Change current directory to directory you want to initialize for git by using "cd" command
+--> git init    [Enter this command to initialize to that directory]
+
+-- To see the files in directory initilaized for git --
+
+--> ls -la  command which lists files that start with a dot
+--> ls -l .git  
+
+*****
+>The git directory contains all the changes and their history and the working tree contains the current versions of the files.
+>The staging area which is also known as the index is a file maintained by Git that contains all of the information 
+about what files and changes are going to go into your next command.
+*****
+
+To Copy a file
+--> cp locationWITHfilename (make sure your current directory is the one where you want to copy it.)
+
+
+
