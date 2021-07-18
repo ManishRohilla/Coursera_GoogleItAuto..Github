@@ -164,3 +164,20 @@ Essentially, what this algorithm does is take a bunch of data as input and produ
 In the case of Git, the input is all information related to the commit, and the 40 character string is the commit ID.
 Cryptographic algorithms like SHA1 can be really complex
 --> git commit --amend == allows us to modify and add changes to the most recent commit. 
+
+                                       Branching
+--> git branch == list all the branches of our repository.
+--> git branch BranchName == To create a new branch.
+--> git checkout BranchName == To switch to other branch.
+--> git checkout -b BranchName == To create and switch to other branch in one go.
+--> git branch -d BranchName == To delete a branch.
+--> git merge BranchName == To merge the branch to the current pointing or working head branch.
+
+****Merging is the term that Git uses for combining branch data and history together. After merging both points at the same commit.****
+****Git uses two different algorithms to perform a merge, fast-forward and three-way merge.****
+**** If two different branches have same files and both have gone thru some changes recently and commit, during the time of merging it will cause conflict.****
+
+QUES- How does git checkout switch branches?
+ANS - By updating the working tree to match the selected branch.
+
+--> git log --graph --oneline
