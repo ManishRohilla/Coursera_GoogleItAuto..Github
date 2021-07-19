@@ -184,3 +184,24 @@ ANS - By updating the working tree to match the selected branch.
 
 --> git log --graph --oneline == for seeing the commits as a graph, and --oneline to only see one line per commit
 ****Git is a distributed version control system. Distributed means that each developer has a copy of the whole repository on their local machine.****
+#GitHub Cloning using url.
+--> git clone HTTPlink == To make a clone.
+--> git push == To pass every change u made on ur local repo to main GitHub.
+--> git config --global credential.helper cache == To store credentials in cache, will be valid for interval of 15 minutes. Dont have to enter username and password for valid intervals again and again.
+
+# Ques--What will happen if the master repository receives a major update since the last local copy was synced?
+# ANS----Git will let you know it's time for an update.
+
+--> git remote -v == Run this command in directory of the repo,the two URLs associated with the origin remote,to fetch data and to push data.
+--> git remote show origin == Similar to remote -v just more detailed.
+--> git branch -r == To get the list of branches that is being tracked by Git Repository.
+
+# Ques- If we want to make a change to a remote branch, what must we do?
+# Ans- Pull the remote branch, merge it with the local branch, then push it back to its origin.
+
+# Ques- What’s the main difference between git fetch and git pull?
+# Ans- git fetch fetches remote updates but doesn't merge; git pull fetches remote updates and merges.
+
+--> git fetch == To sync the data, This command copies the commits done in the remote repository to the remote branches, so we can see what other people have committed.
+--> git merge origin/master == To merges the origin/master branch into our local master branch. We'll call git merge origin/master(online repo) with local repo.
+
