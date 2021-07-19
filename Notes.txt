@@ -180,4 +180,5 @@ Cryptographic algorithms like SHA1 can be really complex
 QUES- How does git checkout switch branches?
 ANS - By updating the working tree to match the selected branch.
 
---> git log --graph --oneline
+--> git log --graph --oneline == for seeing the commits as a graph, and --oneline to only see one line per commit
+****Git is a distributed version control system. Distributed means that each developer has a copy of the whole repository on their local machine.****
