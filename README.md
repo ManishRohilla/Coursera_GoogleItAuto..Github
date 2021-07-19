@@ -224,6 +224,8 @@ ANS - By updating the working tree to match the selected branch.
 
 --> git branch -r == To get the list of branches that is being tracked by Git Repository.
 
+--> git pull == To get every change from remote repo to local repo and merge it automatically implicitly.
+
 
 # Ques- If we want to make a change to a remote branch, what must we do?
 # Ans- Pull the remote branch, merge it with the local branch, then push it back to its origin.
@@ -234,5 +236,9 @@ ANS - By updating the working tree to match the selected branch.
 --> git fetch == To sync the data, This command copies the commits done in the remote repository to the remote branches, so we can see what other people have committed.
 
 --> git merge origin/master == To merges the origin/master branch into our local master branch. We'll call git merge origin/master(online repo) with local repo.
+
+--> git remote update == If we want to get the contents of remote branches without automatically merging any contents into the local branches, we can call git remote update.
+
+**git pull will merge branches with fast-forward algo. automatically**
 
 
