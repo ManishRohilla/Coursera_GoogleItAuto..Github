@@ -233,6 +233,9 @@ ANS - By updating the working tree to match the selected branch.
 # Ques- What’s the main difference between git fetch and git pull?
 # Ans- git fetch fetches remote updates but doesn't merge; git pull fetches remote updates and merges.
 
+# Ques- What should you do with the <<<<<<<, =======, and >>>>>>> conflict markers when resolving a merge conflict?
+# Ans- Remove all of the conflict markers and only leave the code as it should be after the merge.
+
 --> git fetch == To sync the data, This command copies the commits done in the remote repository to the remote branches, so we can see what other people have committed.
 
 --> git merge origin/master == To merges the origin/master branch into our local master branch. We'll call git merge origin/master(online repo) with local repo.
