@@ -207,6 +207,8 @@ ANS - By updating the working tree to match the selected branch.
 
 --> git log --graph --oneline == for seeing the commits as a graph, and --oneline to only see one line per commit
 
+--> git log --graph --oneline --all
+
 ****Git is a distributed version control system. Distributed means that each developer has a copy of the whole repository on their local machine.****
 #GitHub Cloning using url.
 --> git clone HTTPlink == To make a clone.
@@ -243,5 +245,19 @@ ANS - By updating the working tree to match the selected branch.
 --> git remote update == If we want to get the contents of remote branches without automatically merging any contents into the local branches, we can call git remote update.
 
 **git pull will merge branches with fast-forward algo. automatically**
+
+Once our branch has been properly reviewed and tested, it can get merged back into the master branch. One option is to use the git merge command. Another option is to use the git rebase command. 
+
+**Rebasing means changing the base commit that's used for our branch. Uses fast-forward merge**
+
+# Ques- What does “git rebase refactor” do?
+# Ans - Move the current branch on top of the refactor branch
+
+--> git rebase BranchName == Move the current branch on the top of BranchName.
+
+--> git rebase --continue == To continue the rebasing that was failed due to any conflict.
+
+
+
 
 
