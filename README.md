@@ -215,6 +215,8 @@ ANS - By updating the working tree to match the selected branch.
 
 --> git push == To pass every change u made on ur local repo to main GitHub.
 
+--> git push - u origin branchName == to create the corresponding remote branch. 
+
 --> git config --global credential.helper cache == To store credentials in cache, will be valid for interval of 15 minutes. Dont have to enter username and password for valid intervals again and again.
 
 # Ques--What will happen if the master repository receives a major update since the last local copy was synced?
@@ -256,6 +258,15 @@ Once our branch has been properly reviewed and tested, it can get merged back in
 --> git rebase BranchName == Move the current branch on the top of BranchName.
 
 --> git rebase --continue == To continue the rebasing that was failed due to any conflict.
+**A pull request is a commit or series of commits that you send to the owner of the repository so that they incorporate it into their tree. **
+**Forking is a way of creating a copy of the given repository so that it belongs to our user. In other words, our user will be able to push changes to the forked copy, even when we can't push changes to the other repo.**
+
+--> git rebase-i master == a text editor opens with a list of all the selected commits from the oldest to the most recent. By changing the first word of each line, we can select what we want to do with the commits. The **default action here is pick which takes the commits and rebases them against the branch we selected.**
+
+--> git show == To see the latest commit and the changes in it.
+
+--> git push -f == to force git to push the current snapshot into the repo as is.
+
 
 
 
