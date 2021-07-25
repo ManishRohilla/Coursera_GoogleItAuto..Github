@@ -178,6 +178,8 @@ Woohoo! git status is used to retrieve information about changes waiting to be c
 
 --> git commit --amend == allows us to modify and add changes to the most recent commit. 
 
+--> git commit -a --amend == allows us to modify and add changes to the most recent commit. 
+
 The commit ID is the 40 character long string after the word commit.
 This long jumble of letters and numbers is actually something called a hash, which is calculated using an algorithm called SHA1.
 Essentially, what this algorithm does is take a bunch of data as input and produce a 40 character string from the data as the output. 
@@ -267,6 +269,9 @@ Once our branch has been properly reviewed and tested, it can get merged back in
 
 --> git push -f == to force git to push the current snapshot into the repo as is.
 
+**lots of Python projects, use the PEP8 style guide.**
+**Continuous Delivery means new code is often deployed with the goal of avoiding rollouts with lots of changes between two versions**
+**A continuous integration system will build and test our code every time there's a change. **
 
 
 
