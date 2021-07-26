@@ -272,6 +272,10 @@ Once our branch has been properly reviewed and tested, it can get merged back in
 **lots of Python projects, use the PEP8 style guide.**
 **Continuous Delivery means new code is often deployed with the goal of avoiding rollouts with lots of changes between two versions**
 **A continuous integration system will build and test our code every time there's a change. **
+** you're "downstream" when you copy (clone, checkout, etc) from a repository. Information is flowed "downstream" to you.
+When you make changes, you usually want to send them back "upstream" so they make it into that repository so that everyone pulling from the same source is working with all the same changes.**
+
+--> git remote add upstream https://github.com/[git-username]/it-cert-automation-practice.git == Setting the upstream for a fork you have created using the following command:
 
 
 
